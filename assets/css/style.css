@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("../images/background-black-blank-733857.jpg");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("../images/beautiful-blue-sky-bright-663337.jpg");
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("../images/island-landscape-mountains-65322.jpg");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    /* font-size: 25px; */
+    letter-spacing: 7px;
+  }
+  
+  #landingName {
+    background-color: #66763a;
+    /* color: #66763a; */
+    font-size: 100px;
+    /* text-shadow: 3px 3px 3px white; */
+  }
+
+
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 40px "Lato", sans-serif;
+    color: #66763a;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  
+  .headerDef {
+    text-align: center;
+    font-size: 18px;
+  }
+
+.landingSocial,
+.socialDiv {
+  text-align: center;
+}
+
+.landingSocial {
+  margin-top: 10px;
+}
+
+.landingIcons {
+  margin: 6px;
+}
+
+.socialText {
+  font-size: 24px;
+  margin-left: 20px;
+  color: #777;
+}
+
+.fas,
+.fab {
+  color: #66763a
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+      }
+  }
+  
+
+
+
+
+
+
+
+  
+  .container {
+    max-width: 1125px;
+    /* max-width: 100%; */
+    margin: 0 auto;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-item {
+    width: 330px;
+    height: 265px;
+    text-decoration: none;
+  }
+  
+  .gallery-item img {
+    position: absolute;
+    height: 260px;
+    width: 330px;
+    object-fit: contain;
+
+  }
+  
+  .text-wrapper {
+    position: relative;
+    width: 330px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+  }
+  
+  .text-wrapper:hover {
+    transition: all 0.8s ease;
+    background: rgba(0, 0, 0, 0.6);
+    /* background: rgba(102,118,58, 0.6); */
+    opacity: 1;
+  }
+  
+  .name {
+    font-size: 1.5em;
+  }
+  
+  
+  /* Because there is no hover on a touch devide, we need to move the text to the bottom of the image and display it by default */
+  
+  @media only screen and (max-width: 1024px) {
+    .text-wrapper {
+      opacity: 1;
+      justify-content: flex-end;
+      text-shadow: 1px 1px 1px #000;
+    }
+    .title {
+      margin-bottom: 1em;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+/* div.gallery img {
+    width: 100%;
+    height: auto;
+} */
+
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    /* width: 24.99999%; */
+    width: 33.33333333333;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        width: 100%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
