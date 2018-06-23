@@ -120,6 +120,20 @@ hr.style-one {
     letter-spacing: 4px;
   }
 
+.groupStyle {
+  color:#777;
+  background-color:white;
+  /* text-align:center; */
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+#about p {
+  font-size: 16px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
   h3 {
     letter-spacing: 5px;
@@ -138,6 +152,16 @@ hr.style-one {
 .landingSocial,
 .socialDiv {
   text-align: center;
+}
+
+.socialDiv p {
+  margin-left: 33.333333333333333333%;
+  width: 33.333333333333333333%;
+  text-align: left;
+}
+
+.socialDiv {
+ margin: 0 auto;
 }
 
 .landingSocial {
@@ -199,6 +223,7 @@ a:hover {
   .gallery {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
   
   .gallery-item {
@@ -211,6 +236,8 @@ a:hover {
     position: absolute;
     height: 260px;
     width: 330px;
+    /* width: 100%; */
+    /* height: 100%; */
     object-fit: contain;
 
   }
@@ -247,8 +274,19 @@ a:hover {
       justify-content: flex-end;
       text-shadow: 1px 1px 1px #000;
     }
+    .text-wrapper span {
+      /* background: rgba(0, 0, 0, 0.6); */
+      background-color: #66763a;
+      background-color: #777;
+    }
     .title {
       margin-bottom: 1em;
+    }
+    #landingName {
+      font-size: 88px;
+    }
+    #landingTag {
+      font-size: 20px;
     }
   }
   
@@ -280,11 +318,55 @@ a:hover {
         width: 100%;
         margin: 6px 0;
     }
+    .text-wrapper {
+      opacity: 1;
+      justify-content: flex-end;
+      text-shadow: 1px 1px 1px #000;
+    }
+    .title {
+      margin-bottom: 1em;
+    }
+    #landingName {
+      font-size: 60px;
+    }
+    #landingTag {
+      font-size: 15px;
+    }
+    .landingIcons {
+      font-size: 12px;
+    }
+    .caption {
+      top: 33%;
+    }
+    .socialText {
+      font-size: 16px;
+    }
+    .groupStyle {
+      padding: 20px 30px;
+    }
+    #about p {
+      font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .responsive {
         width: 100%;
+    }
+    #landingName {
+      font-size: 42px;
+    }
+    #landingTag {
+      font-size: 12px;
+    }
+    .landingIcons {
+      font-size: 10px;
+    }
+    .caption {
+      top: 35%;
+    }
+    .socialText {
+      font-size: 14px;
     }
 }
 
